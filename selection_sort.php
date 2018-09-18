@@ -18,7 +18,7 @@ function findsmall(array $arr)
 }
 
 /**
- * 选择排序
+ * 选择排序 - O（n*n）
  *
  * 数组适合随机查找；链表适合插入|删除
  *
