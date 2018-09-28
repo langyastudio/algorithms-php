@@ -5,3 +5,4 @@ Algorithms and data structures implemented in PHP
 - selection sort
 - recursion
 - quick sort
+- hash table
