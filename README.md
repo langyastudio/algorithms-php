@@ -9,3 +9,4 @@ Algorithms and data structures implemented in PHP
 - breadth first search
 - dijkstras
 - greedy
+- knn
