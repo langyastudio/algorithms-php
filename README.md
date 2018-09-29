@@ -8,3 +8,4 @@ Algorithms and data structures implemented in PHP
 - hash table
 - breadth first search
 - dijkstras
+- greedy

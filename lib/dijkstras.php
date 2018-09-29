@@ -85,5 +85,5 @@ while ($node)
     $node = findLowestCostNode($costs);
 }
 
-print("Cost from the start to each node:");
+print('Cost from the start to each node:');
 var_dump($costs);

@@ -4,6 +4,7 @@ require_once __DIR__ . '/lib/selection_sort.php';
 require_once __DIR__ . '/lib/recursion.php';
 require_once __DIR__ . '/lib/quicksort.php';
 require_once __DIR__ . '/lib/breadth_first_search.php';
+require_once __DIR__ . '/lib/greedy.php';
 
 if(!function_exists('logex')){
     function logex($comment, $value)
@@ -38,3 +39,14 @@ $graph['thom']   = [];
 $graph['jonny']  = [];
 
 logex('breadth first search: you!', breadth_first_search('you', $graph));
+
+//6.0 greedy
+$statesNeeded = ['mt', 'wa', 'or', 'id', 'nv', 'ut', 'ca', 'az'];
+
+$stations['kone']   = ['id', 'nv', 'ut'];
+$stations['ktwo']   = ['wa', 'id', 'mt'];
+$stations['kthree'] = ['or', 'nv', 'ca'];
+$stations['kfour']  = ['nv', 'ut'];
+$stations['kfive']  = ['ca', 'az'];
+
+logex('greedy: ', implode('-', greedy($stations, $statesNeeded)));
