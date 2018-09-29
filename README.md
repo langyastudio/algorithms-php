@@ -6,3 +6,4 @@ Algorithms and data structures implemented in PHP
 - recursion
 - quick sort
 - hash table
+- breadth first search

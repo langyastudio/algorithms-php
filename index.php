@@ -3,6 +3,7 @@ require_once __DIR__ . '/lib/binary_search.php';
 require_once __DIR__ . '/lib/selection_sort.php';
 require_once __DIR__ . '/lib/recursion.php';
 require_once __DIR__ . '/lib/quicksort.php';
+require_once __DIR__ . '/lib/breadth_first_search.php';
 
 if(!function_exists('logex')){
     function logex($comment, $value)
@@ -24,3 +25,16 @@ logex('recursion: 5!', fact(5));
 
 //4.0 quick sort
 logex('quick sort: 5, 3, 6, 2, 10', '[' . join(', ', quick_sort([5, 3, 6, 2, 10])) . ']');
+
+//5.0 breadth first search
+$graph           = [];
+$graph['you']    = ['alice', 'bob', 'claire'];
+$graph['bob']    = ['anuj', 'peggy'];
+$graph['alice']  = ['peggy'];
+$graph['claire'] = ['thom', 'jonny'];
+$graph['anuj']   = [];
+$graph['peggy']  = [];
+$graph['thom']   = [];
+$graph['jonny']  = [];
+
+logex('breadth first search: you!', breadth_first_search('you', $graph));
