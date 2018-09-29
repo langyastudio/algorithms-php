@@ -1,6 +1,6 @@
 <?php
 /**
- * 广度优先搜索 - 找出两样东西之间的最短距离
+ * 广度优先搜索 - 找出两样东西之间段数最少的路径
  *  1、使用图建立问题模型
  *  2、使用广度优先搜索解决问题
  *  3、检查过的不用再检查，否则死循环
@@ -17,7 +17,7 @@ function enqueues(\SplQueue $queue, array $persons)
 //最后一位为 m ，为目标结果
 function personIsSeller(string $name): bool
 {
-    return $name[-1] == "m";
+    return $name[-1] == 'm';
 }
 
 //O(V+E)

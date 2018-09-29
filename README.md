@@ -7,3 +7,4 @@ Algorithms and data structures implemented in PHP
 - quick sort
 - hash table
 - breadth first search
+- dijkstras
