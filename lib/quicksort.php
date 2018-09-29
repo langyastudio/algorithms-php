@@ -10,7 +10,7 @@
  */
 function quick_sort(array $arr)
 {
-    // base case, array with 0 or 1 element are already "sorted"
+    // base case, array with 0 or 1 element are already 'sorted'
     if(count($arr) < 2)
         return $arr;
 
